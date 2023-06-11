@@ -13,10 +13,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media only screen and (max-width:$bp-smallest){
+    order:1 ;
+    flex: 0 0 100% ;
+    background-color: var(--color-Grey-light-2);
+    
+   
+  }
   &__input {
     font-family: inherit;
     font-size: inherit;
-    background-color: var(--color-Grey-light-2);
+    v
     border: none;
     padding: 0.7rem 2rem;
     border-radius: 100px;
@@ -163,6 +170,11 @@
       padding: 2rem;
      
    }
+   @media only screen and (max-width:$bp-small){
+    flex-direction: column;
+    padding: 1.5rem .5rem;
+   
+  }
   }
   &__item:active::before {
     background-color: var(--color-Primary-light);
@@ -172,6 +184,13 @@
     height: 1.7rem;
     margin-right: 2rem;
     fill: currentColor;
+    @media only screen and (max-width:$bp-small){
+     margin-right: 0;
+     margin-bottom: 7px;
+     width: 1.5rem;
+     height: 1.5rem;
+     
+    }
   }
 }
 
@@ -216,6 +235,11 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
+    @media only screen and (max-width:$bp-small){
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+     
+    }
   }
   &__icon-star,
   &__icon-location {
@@ -242,6 +266,9 @@
     justify-items: center;
     flex-direction: column;
     margin-top: 1rem;
+    @media only screen and (max-width:$bp-small){
+      padding: 0 1.5rem;
+    }
 
 
   }
@@ -249,11 +276,19 @@
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -3px;
+    @media only screen and (max-width:$bp-small){
+      font-size:1.8rem ;
+     
+    }
    
   }
   &__rating-count {
     font-size: .8rem;
     text-transform: uppercase;
+    @media only screen and (max-width:$bp-small){
+      font-size: .5rem ;
+     
+    }
 
   }
 }
@@ -369,6 +404,7 @@
 
   }
   &__friends{
+    display: flex;
     
   }
   &__photo{
