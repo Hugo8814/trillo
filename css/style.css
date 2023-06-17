@@ -234,7 +234,7 @@ body {
   transition: all 0.2s; }
   .btn-inlinespan {
     margin-left: 3px;
-    transition: all; }
+    transition: all .2s; }
   .btn-inline:hover {
     color: var(--color-Grey-dark-1); }
     .btn-inline:hoverspan {
@@ -383,4 +383,7 @@ body {
   padding: 3rem; }
 
 .user-reviews {
-  flex: 1; }
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
