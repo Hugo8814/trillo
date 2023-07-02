@@ -144,7 +144,7 @@ body {
     width: 3px;
     background-color: var(--color-primary);
     transform: scaleY(0);
-    transition: transform .4s; }
+    transition: transform .41s; }
   .side-nav__item:hover::before {
     transform: scaleY(1); }
   .side-nav__link:link, .side-nav__link:visited {
